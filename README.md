@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-    自動抓官方<strong>活動公告</strong>，將內容以embed格式包裝，並推播到Discord Server，每次執行前會先check for update。
+    自動抓官方<strong>活動公告</strong> ， 將內容以embed格式包裝，並推播到Discord Server，每次執行前會先check for update。
 </div>
 
 
