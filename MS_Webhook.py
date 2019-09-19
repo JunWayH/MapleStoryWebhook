@@ -6,11 +6,9 @@ class MSWEBHOOK():
     def __init__(self):
         if MS_Official.Is_updated():
             exit()
-        self.hook = Webhook('https://discordapp.com/api/webhooks/622428370193481730/fd2i8hSTJ_rSqjfIeNDMiBk9TyovpMd6KUOsrXD-jkhjTMqzPZOS4UuvT3C94H3rgY5X')
-        self.thook = Webhook('https://discordapp.com/api/webhooks/622467336066170880/q7Gea-tsw7xWir1ikIgFtxSlePIypDsamaE-Um6YuOIMmGYtyfK9qJN1Aqd4f6eF9yAz')
         
-        #self.hook = Webhook('https://discordapp.com/api/webhooks/{id}/{token}')
-        #self.thook = Webhook('https://discordapp.com/api/webhooks/{id}/{token}')
+        self.hook = Webhook('https://discordapp.com/api/webhooks/{id}/{token}')
+        self.thook = Webhook('https://discordapp.com/api/webhooks/{id}/{token}')
         self.anno_dict, self.bottom_image = MS_Official.get_official_announcement()
 
     def send_to_discord(self):
