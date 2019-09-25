@@ -4,11 +4,15 @@ import sys
 
 class MSWEBHOOK():
     def __init__(self):
+        try:
+            self.hook = Webhook('https://discordapp.com/api/webhooks/{id}/{token}')
+            self.thook = Webhook('https://discordapp.com/api/webhooks/{id}/{token}')
+        except ValueError as e:
+            print(e)
+            print('Webhook link need modify!!')
+            exit()
         if MS_Official.Is_updated():
             exit()
-        
-        self.hook = Webhook('https://discordapp.com/api/webhooks/{id}/{token}')
-        self.thook = Webhook('https://discordapp.com/api/webhooks/{id}/{token}')
         self.anno_dict, self.bottom_image = MS_Official.get_official_announcement()
 
     def send_to_discord(self):
